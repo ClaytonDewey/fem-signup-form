@@ -1,0 +1,32 @@
+@use '../util' as *;
+
+:root {
+  // Colors
+  --clr-red: #ff7979;
+  --clr-green: #38cc8b;
+  --clr-blue: #5e53a4;
+  --clr-blue-gray: #b9b6d3;
+  --clr-dark-blue: #3e3c49;
+  --clr-black: #000;
+  --clr-white: #fff;
+
+  // Font-family
+  --ff-sans: 'Poppins', Arial, Helvetica, sans-serif;
+  --ff-mono: 'Source Code Pro', monospace;
+  --ff-serif: Cambria, Cochin, Georgia, serif;
+
+  // Font-sizes
+  --fs-4xlarge: #{rem(61.04)};
+  --fs-3xlarge: #{rem(48.832)};
+  --fs-2xlarge: #{rem(39.06)};
+  --fs-xlarge: #{rem(31.25)};
+  --fs-large: #{rem(25)};
+  --fs-med: #{rem(20)};
+  --fs-reg: #{rem(16)};
+  --fs-small: #{rem(12.8)};
+  --fs-xsmall: #{rem(10.24)};
+
+  // Flexbox gap/columns
+  --gap: #{rem(20)};
+  --columns: 2;
+}
