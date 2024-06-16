@@ -15,16 +15,20 @@ html {
 body {
   font-family: var(--ff-sans);
   font-weight: 500;
-  font-size: var(--fs-med);
+  font-size: var(--fs-reg);
   line-height: 1.6;
   position: relative;
   height: 100vh;
+  background: linear-gradient(
+      hsla(0, 100%, 74%, 0.85),
+      hsla(0, 100%, 74%, 0.85)
+    ),
+    url('../../images/bg-intro-mobile.png') center/cover no-repeat;
 
   @include breakpoint(medium) {
-    font-size: var(--fs-reg);
     background: linear-gradient(
-        hsla(0, 100%, 74%, 0.5),
-        hsla(0, 100%, 74%, 0.7)
+        hsla(0, 100%, 74%, 0.85),
+        hsla(0, 100%, 74%, 0.85)
       ),
       url('../../images/bg-intro-desktop.png') center/cover no-repeat;
   }
@@ -35,7 +39,7 @@ body {
   margin: 0px auto;
   width: 100%;
   box-sizing: border-box;
-  color: var(--clr-black);
+  color: var(--clr-white);
 }
 
 .visually-hidden {
