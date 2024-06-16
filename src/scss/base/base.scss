@@ -19,18 +19,12 @@ body {
   line-height: 1.6;
   position: relative;
   height: 100vh;
-  background: linear-gradient(
-      hsla(0, 100%, 74%, 0.85),
-      hsla(0, 100%, 74%, 0.85)
-    ),
+  background: linear-gradient(hsla(0, 100%, 74%, 0.9), hsla(0, 100%, 74%, 0.9)),
     url('../../images/bg-intro-mobile.png') center/cover no-repeat;
 
   @include breakpoint(medium) {
-    background: linear-gradient(
-        hsla(0, 100%, 74%, 0.85),
-        hsla(0, 100%, 74%, 0.85)
-      ),
-      url('../../images/bg-intro-desktop.png') center/cover no-repeat;
+    background: url('../../images/bg-intro-desktop.png') center/cover no-repeat,
+      linear-gradient(hsla(0, 100%, 74%, 0.9), hsla(0, 100%, 74%, 0.9));
   }
 }
 
