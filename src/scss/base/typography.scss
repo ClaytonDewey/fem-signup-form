@@ -14,21 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: var(--fs-large);
 }
-h2 {
-  font-size: var(--fs-3xlarge);
-}
-h3 {
-  font-size: var(--fs-2xlarge);
-}
-h4 {
-  font-size: var(--fs-xlarge);
-}
-h5 {
-  font-size: var(--fs-large);
-}
-h6 {
-  font-size: var(--fs-med);
-}
 
 p {
   font-size: var(--fs-reg);
@@ -42,4 +27,22 @@ small {
 
 .xsmall {
   font-size: var(--fs-xsmall);
+}
+
+.disclaimer {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(11);
+  line-height: rem(21);
+  letter-spacing: 1px;
+  /* or 191% */
+  text-align: center;
+  color: var(--clr-blue-gray);
+
+  a {
+    font-weight: 700;
+    color: var(--clr-red);
+    text-decoration: none;
+  }
 }

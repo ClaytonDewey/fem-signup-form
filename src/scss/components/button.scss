@@ -6,6 +6,7 @@
     display: block;
     width: 100%;
     padding: 0.9375em 2.6875em;
+    margin-bottom: rem(8);
     border: none;
     background: #38cc8b;
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
@@ -20,13 +21,4 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-}
-
-// TODO: move to own component
-input {
-  height: rem(56);
-  display: flex;
-  align-items: center;
-  padding: 0 rem(20);
-  width: 100%;
 }
