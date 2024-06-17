@@ -13,18 +13,19 @@ html {
 }
 
 body {
+  padding: rem(88) rem(24) rem(68);
+  position: relative;
+  height: 100vh;
+  background: url('../../images/bg-intro-mobile.png') center/cover no-repeat,
+    var(--clr-red);
   font-family: var(--ff-sans);
   font-weight: 500;
   font-size: var(--fs-reg);
   line-height: 1.6;
-  position: relative;
-  height: 100vh;
-  background: linear-gradient(hsla(0, 100%, 74%, 0.9), hsla(0, 100%, 74%, 0.9)),
-    url('../../images/bg-intro-mobile.png') center/cover no-repeat;
 
   @include breakpoint(medium) {
     background: url('../../images/bg-intro-desktop.png') center/cover no-repeat,
-      linear-gradient(hsla(0, 100%, 74%, 0.9), hsla(0, 100%, 74%, 0.9));
+      var(--clr-red);
   }
 }
 

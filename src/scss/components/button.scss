@@ -1,0 +1,32 @@
+@use '../util' as *;
+
+.btn {
+  &--submit {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 0.9375em 2.6875em;
+    border: none;
+    background: #38cc8b;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(15);
+    line-height: rem(26);
+    /* identical to box height, or 173% */
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+// TODO: move to own component
+input {
+  height: rem(56);
+  display: flex;
+  align-items: center;
+  padding: 0 rem(20);
+  width: 100%;
+}

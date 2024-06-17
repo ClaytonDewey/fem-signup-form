@@ -1,0 +1,20 @@
+@use '../util' as *;
+
+.cta {
+  margin-bottom: rem(24);
+  padding: 1.125em 4.125em;
+  text-align: center;
+  background: #5e54a4;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  font-size: rem(15);
+  font-style: normal;
+  line-height: 26px;
+  font-weight: 400;
+  /* or 173% */
+  letter-spacing: 0.267857px;
+
+  span {
+    font-weight: 700;
+  }
+}
