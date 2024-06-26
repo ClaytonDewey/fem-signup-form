@@ -1,26 +1,19 @@
 @use '../util' as *;
 
-.flex {
+.row {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
+  flex-direction: column;
 
-  @include breakpoint(xsmall) {
-    &__item {
-      flex: 0 1
-        calc(
-          (100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns))
-        );
-    }
+  @include breakpoint(medium) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
+}
 
-  @include breakpoint(small) {
-    &__item {
-      --columns: 4;
-      flex: 0 1
-        calc(
-          (100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns))
-        );
-    }
+@include breakpoint(medium) {
+  // SIMPLE COLUMNS - FRACTIONS
+  .col-half {
+    width: rem(540);
   }
 }

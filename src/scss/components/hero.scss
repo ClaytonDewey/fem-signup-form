@@ -3,6 +3,7 @@
 .hero {
   text-align: center;
   margin-bottom: rem(64);
+
   h1 {
     font-style: normal;
     font-weight: 700;
@@ -15,8 +16,19 @@
   p {
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: rem(16);
+    line-height: rem(26);
     /* or 162% */
+  }
+
+  @include breakpoint(medium) {
+    text-align: left;
+    margin-bottom: 0;
+
+    h1 {
+      font-size: rem(50);
+      line-height: rem(55);
+      letter-spacing: -0.52px;
+    }
   }
 }
