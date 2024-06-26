@@ -1,0 +1,35 @@
+@use '../util' as *;
+
+.row {
+  display: grid;
+  column-gap: 1em;
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto;
+    align-items: center;
+  }
+}
+
+@include breakpoint(medium) {
+  // SIMPLE COLUMNS - FRACTIONS
+  .col-fourth {
+    grid-column: auto / span 3;
+  }
+
+  .col-third {
+    grid-column: auto / span 4;
+  }
+
+  .col-two-thirds {
+    grid-column: auto / span 8;
+  }
+
+  .col-half {
+    grid-column: auto / span 6;
+  }
+
+  .col-three-fourths {
+    grid-column: auto / span 9;
+  }
+}

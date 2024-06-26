@@ -7,9 +7,15 @@ const App: React.FC<AppProps> = () => {
   return (
     <>
       <main>
-        <Hero />
-        <Cta />
-        <Form />
+        <div className='container row'>
+          <div className='col-half'>
+            <Hero />
+          </div>
+          <div className='col-half'>
+            <Cta />
+            <Form />
+          </div>
+        </div>
       </main>
       <Footer />
     </>

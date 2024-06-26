@@ -3,6 +3,10 @@ import React from 'react';
 type FormProps = {};
 
 const Form: React.FC<FormProps> = () => {
+  // const handleSubmit = (event: React.SyntheticEvent<HTMLFieldSetElement>) => {
+  //   event.preventDefault();
+  // };
+
   return (
     <form className='form'>
       <div className='form__item'>
