@@ -1,0 +1,21 @@
+@use '../util' as *;
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: rem(61);
+
+  @include breakpoint(desktop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(48);
+  }
+}
+
+@include breakpoint(tablet) {
+  // SIMPLE COLUMNS - FRACTIONS
+  .col-half {
+    width: rem(540);
+  }
+}

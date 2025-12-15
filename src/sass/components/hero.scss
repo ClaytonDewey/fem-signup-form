@@ -1,0 +1,30 @@
+@use '../util' as *;
+
+.hero {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+    text-align: center;
+  }
+
+  h1 {
+    font: var(--text-preset-2);
+    letter-spacing: rem(-0.3);
+    margin: 0;
+  }
+
+  p {
+    font: var(--text-preset-3);
+  }
+
+  @include breakpoint(tablet) {
+    text-align: left;
+    margin-block-end: 0;
+
+    h1 {
+      font: var(--text-preset-1);
+      letter-spacing: rem(-0.5);
+    }
+  }
+}

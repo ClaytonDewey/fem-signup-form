@@ -1,0 +1,53 @@
+@use '../util' as *;
+
+:root {
+  // Colors
+  --clr-black: #000;
+  --clr-white: #fff;
+
+  --clr-gray-900: #3d3b48;
+  --clr-gray-200: #dedede;
+
+  --clr-purple-700: #5e54a4;
+  --clr-purple-400: #757292;
+  --clr-purple-300: #a6a1cf;
+  --clr-purple-350: #bab7d4;
+
+  --clr-green-400: #38cc8b;
+  --clr-green-300: #77e2b3;
+
+  --clr-red-400: #ff7979;
+
+  --clr-border: var(--clr-gray-200);
+  --error: var(--clr-red-400);
+  --clr-link: #b85858;
+
+  // Font-family
+  --ff-sans: 'Poppins', Arial, Helvetica, sans-serif;
+  --ff-mono: 'Source Code Pro', monospace;
+  --ff-serif: Cambria, Cochin, Georgia, serif;
+
+  // Font-sizes
+  --text-preset-1: normal normal 700 #{rem(50)} / 110% var(--ff-sans);
+  --text-preset-2: normal normal 700 #{rem(28)} / 130% var(--ff-sans);
+  --text-preset-3: normal normal 400 #{rem(16)} / 165% var(--ff-sans);
+  --text-preset-4: normal normal 700 #{rem(15)} / 175% var(--ff-sans);
+  --text-preset-4-semi: normal normal 600 #{rem(15)} / 175% var(--ff-sans);
+  --text-preset-4-reg: normal normal 400 #{rem(15)} / 175% var(--ff-sans);
+  --text-preset-5: normal normal 700 #{rem(11)} / 190% var(--ff-sans);
+  --text-preset-5-med: normal normal 500 #{rem(11)} / 190% var(--ff-sans);
+  --text-preset-5-reg: italic normal 400 #{rem(11)} / 155% var(--ff-sans);
+
+  // Flexbox gap/columns
+  --gap: #{rem(20)};
+  --columns: 2;
+
+  // Misc
+  @media (prefers-reduced-motion: no-preference) {
+    --transition: all 0.3s ease-in-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    --transition: none;
+  }
+}

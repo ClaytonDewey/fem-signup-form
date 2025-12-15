@@ -1,0 +1,50 @@
+@use '../util' as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-family: var(--ff-sans);
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  padding: rem(88) rem(24) rem(68);
+  position: relative;
+  background: url('../../images/bg-intro-mobile.png') center/contain repeat,
+    var(--clr-red-400);
+
+  @include breakpoint(tablet) {
+    background: url('../../images/bg-intro-desktop.png') center/contain repeat,
+      var(--clr-red-400);
+
+    padding: rem(88) rem(114) rem(88);
+  }
+
+  @include breakpoint(desktop) {
+    padding-block-start: rem(121);
+  }
+}
+
+html,
+body {
+  margin: 0px auto;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--clr-white);
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

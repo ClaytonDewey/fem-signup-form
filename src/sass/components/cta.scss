@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+.cta {
+  align-items: center;
+  text-align: center;
+  height: rem(88);
+  margin-block-end: rem(24);
+  padding: rem(18) rem(60);
+  background: var(--clr-purple-700);
+  box-shadow: 0 rem(8) 0 rgba(0, 0, 0, 0.14688);
+  border-radius: rem(10);
+  font: var(--text-preset-4-reg);
+  letter-spacing: rem(0.25);
+
+  span {
+    font-weight: 700;
+  }
+
+  @include breakpoint(tablet) {
+    height: rem(60);
+  }
+}

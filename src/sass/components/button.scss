@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: var(--transition);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+
+  &-submit {
+    height: rem(56);
+    width: 100%;
+    margin-block-end: rem(8);
+    border: none;
+    background: var(--clr-green-400);
+    box-shadow: inset 0 rem(-4) 0 rgba(0, 0, 0, 0.0908818);
+    border-radius: rem(5);
+    color: var(--clr-gray-900);
+    font: var(--text-preset-4-semi);
+    letter-spacing: rem(2);
+    text-transform: uppercase;
+
+    &:hover {
+      background: var(--clr-green-300);
+    }
+  }
+}
