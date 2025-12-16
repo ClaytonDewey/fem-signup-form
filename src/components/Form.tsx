@@ -15,7 +15,7 @@ const Form = () => {
   const formInputs = [
     { id: 'fname', name: 'fname', type: 'text', placeholder: 'First Name' },
     { id: 'lname', name: 'lname', type: 'text', placeholder: 'Last Name' },
-    { id: 'email', name: 'email', type: 'email', placeholder: 'Email' },
+    { id: 'email', name: 'email', type: 'email', placeholder: 'Email Address' },
     {
       id: 'password',
       name: 'password',
