@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/fem-ticket-generator/static/css/main.5a7d0df8.css",
-    "main.js": "/fem-ticket-generator/static/js/main.0867700e.js",
-    "static/js/453.493b5f15.chunk.js": "/fem-ticket-generator/static/js/453.493b5f15.chunk.js",
-    "static/media/bg-intro-desktop.png": "/fem-ticket-generator/static/media/bg-intro-desktop.059183eea52640c5068d.png",
-    "static/media/bg-intro-mobile.png": "/fem-ticket-generator/static/media/bg-intro-mobile.02ce398270ece1769ebc.png",
-    "index.html": "/fem-ticket-generator/index.html",
-    "main.5a7d0df8.css.map": "/fem-ticket-generator/static/css/main.5a7d0df8.css.map",
-    "main.0867700e.js.map": "/fem-ticket-generator/static/js/main.0867700e.js.map",
-    "453.493b5f15.chunk.js.map": "/fem-ticket-generator/static/js/453.493b5f15.chunk.js.map"
+    "main.css": "/fem-signup-form/static/css/main.3329e756.css",
+    "main.js": "/fem-signup-form/static/js/main.3d62b907.js",
+    "static/js/453.493b5f15.chunk.js": "/fem-signup-form/static/js/453.493b5f15.chunk.js",
+    "static/media/bg-intro-desktop.png": "/fem-signup-form/static/media/bg-intro-desktop.059183eea52640c5068d.png",
+    "static/media/bg-intro-mobile.png": "/fem-signup-form/static/media/bg-intro-mobile.02ce398270ece1769ebc.png",
+    "index.html": "/fem-signup-form/index.html",
+    "main.3329e756.css.map": "/fem-signup-form/static/css/main.3329e756.css.map",
+    "main.3d62b907.js.map": "/fem-signup-form/static/js/main.3d62b907.js.map",
+    "453.493b5f15.chunk.js.map": "/fem-signup-form/static/js/453.493b5f15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a7d0df8.css",
-    "static/js/main.0867700e.js"
+    "static/css/main.3329e756.css",
+    "static/js/main.3d62b907.js"
   ]
 }
