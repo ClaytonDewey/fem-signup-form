@@ -13,9 +13,17 @@
   }
 }
 
-@include breakpoint(tablet) {
+@include breakpoint(desktop) {
   // SIMPLE COLUMNS - FRACTIONS
-  .col-half {
+  .col {
+    flex-shrink: 0;
+  }
+
+  .col:first-child {
+    width: rem(525);
+  }
+
+  .col:nth-child(2) {
     width: rem(540);
   }
 }

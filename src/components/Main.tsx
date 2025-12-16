@@ -2,7 +2,7 @@ import { Form } from '.';
 
 const Main = () => {
   return (
-    <main>
+    <main className='col'>
       <div className='cta'>
         <span>Try it free 7 days</span> then $20/mo. thereafter
       </div>

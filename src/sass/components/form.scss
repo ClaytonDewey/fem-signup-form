@@ -19,13 +19,16 @@ fieldset {
   gap: rem(16);
 
   &__wrapper {
-    margin-block-end: rem(24);
     padding: rem(24);
     width: 100%;
     background: var(--clr-white);
     color: var(--clr-gray-900);
     box-shadow: 0 rem(8) 0 rgba(0, 0, 0, 0.14688);
     border-radius: rem(10);
+
+    @include breakpoint(tablet) {
+      padding: rem(32) rem(40);
+    }
   }
 
   &__item {
@@ -63,13 +66,22 @@ input {
   height: rem(56);
   display: flex;
   align-items: center;
-  padding: 0 rem(20);
+  padding-inline: rem(20);
   width: 100%;
   font: var(--text-preset-4-reg);
   letter-spacing: rem(0.25);
 
   &::placeholder {
-    color: var(--clr-gray-900);
+    color: var(--clr-gray-700);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--clr-purple-700);
+  }
+
+  @include breakpoint(tablet) {
+    padding-inline: rem(32);
   }
 }
 
@@ -82,5 +94,9 @@ input {
     font-weight: 700;
     color: var(--clr-link);
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

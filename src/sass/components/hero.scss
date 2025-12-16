@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: rem(24);
     text-align: center;
+    margin-inline: auto;
   }
 
   h1 {
@@ -19,12 +20,21 @@
   }
 
   @include breakpoint(tablet) {
-    text-align: left;
     margin-block-end: 0;
+
+    &__content {
+      gap: rem(40);
+    }
 
     h1 {
       font: var(--text-preset-1);
       letter-spacing: rem(-0.5);
+    }
+  }
+
+  @include breakpoint(desktop) {
+    &__content {
+      text-align: left;
     }
   }
 }

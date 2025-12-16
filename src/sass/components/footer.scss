@@ -1,5 +1,9 @@
 @use '../util' as *;
 
+footer {
+  margin-block-start: rem(48);
+}
+
 .attribution {
   font: var(--text-preset-4-reg);
   text-align: center;

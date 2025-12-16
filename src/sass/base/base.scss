@@ -13,6 +13,14 @@ html {
   font-weight: normal;
 }
 
+html,
+body {
+  margin: 0px auto;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--clr-white);
+}
+
 body {
   padding: rem(88) rem(24) rem(68);
   position: relative;
@@ -28,15 +36,8 @@ body {
 
   @include breakpoint(desktop) {
     padding-block-start: rem(121);
+    padding-inline: 0;
   }
-}
-
-html,
-body {
-  margin: 0px auto;
-  width: 100%;
-  box-sizing: border-box;
-  color: var(--clr-white);
 }
 
 .sr-only {

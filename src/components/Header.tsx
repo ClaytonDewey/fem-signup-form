@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className='col-half'>
+    <div className='col'>
       <header className='hero'>
         <div className='hero__content'>
           <h1>Learn to code by watching others</h1>
