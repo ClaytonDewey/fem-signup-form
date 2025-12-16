@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/ClaytonDewey/fem-signup-form](https://github.com/ClaytonDewey/fem-signup-form)
-- Live Site URL: [https://claytondewey.github.io/fem-ticket-generator/](https://claytondewey.github.io/fem-signup-form/)
+- Live Site URL: [https://claytondewey.github.io/fem-signup-form/](https://claytondewey.github.io/fem-signup-form/)
 
 ## My process
 
